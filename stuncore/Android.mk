@@ -17,7 +17,7 @@
 # use by our example platform shared library.
 
 LOCAL_PATH:= $(call my-dir)
-LOCAL_ICS_PATH:=$(LOCAL_PATH)/../../..
+LOCAL_ICS_PATH:=$(TOP)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE_TAGS := optional
