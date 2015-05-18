@@ -36,19 +36,20 @@ LOCAL_SRC_FILES:= adapters.cpp \
 
 # All of the shared libraries we link against.
 LOCAL_SHARED_LIBRARIES := \
-    libandroid_runtime \
-    libnativehelper \
-    libcutils \
-    libutils  \
-    libhardware \
-    libhardware_legacy \
-    libnativehelper \
-    libcommon \
-    libstuncore \
-    libnetutils \
+        libandroid_runtime \
+        libnativehelper \
+        libcutils \
+        libutils  \
+        libnetutils \
+        libhardware \
+        libhardware_legacy \
+        libnativehelper \
+        libcommon \
+        libstuncore \
+
 # No static libraries.
 LOCAL_STATIC_LIBRARIES :=  libstdc++  \
-                              libgnustl_static \
+                           libgnustl_static \
 # Also need the  headers.
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../common/

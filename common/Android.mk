@@ -47,7 +47,6 @@ LOCAL_SHARED_LIBRARIES := \
       libhardware \
       libhardware_legacy \
       libnativehelper \
-      libnetutils \
  
 LOCAL_STATIC_LIBRARIES :=  libstdc++  \
                            libgnustl_static \
@@ -88,7 +87,6 @@ LOCAL_SHARED_LIBRARIES := \
     libhardware \
     libhardware_legacy \
     libnativehelper \
-    libnetutils \
 
 LOCAL_STATIC_LIBRARIES :=  libstdc++  \
                            libgnustl_static \
