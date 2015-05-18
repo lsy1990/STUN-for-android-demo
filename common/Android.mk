@@ -53,8 +53,8 @@ LOCAL_STATIC_LIBRARIES :=  libstdc++  \
                            libgnustl_static \
 # Also need the  headers.
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../
-LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/8/sources/cxx-stl/gnu-libstdc++/include/
-LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/8/sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/include/
+LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/9/sources/cxx-stl/gnu-libstdc++/include/
+LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/9/sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/include/
   
  # No specia compiler flags.
 LOCAL_CFLAGS += -Wno-non-virtual-dtor -Wuninitialized  -Wuninitialized
@@ -94,8 +94,8 @@ LOCAL_STATIC_LIBRARIES :=  libstdc++  \
                            libgnustl_static \
 # Also need the  headers.
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../
-LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/8/sources/cxx-stl/gnu-libstdc++/include/
-LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/8/sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/include/
+LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/9/sources/cxx-stl/gnu-libstdc++/include/
+LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/9/sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/include/
 
 # No specia compiler flags.
 LOCAL_CFLAGS += -Wno-non-virtual-dtor -Wuninitialized  -Wuninitialized

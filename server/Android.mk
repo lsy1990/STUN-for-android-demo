@@ -39,16 +39,22 @@ LOCAL_SHARED_LIBRARIES := \
     libnativehelper \
     libcutils \
     libutils  \
+    libnetutils \
     libhardware \
     libhardware_legacy \
     libnativehelper \
-    libnetworkutils \
+    libcrypto \
+#    libnetworkutils \
     libstuncore \
     libcommon \
 
 # No static libraries.
 LOCAL_STATIC_LIBRARIES :=   libstdc++  \
                             libgnustl_static \
+                            libnetworkutils \
+                            libstuncore \
+                            libcommon \
+
                             
 
 # Also need the  headers.
@@ -58,8 +64,8 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)/../stuncore/
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../networkutils/
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../resources/
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../boost/
-LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/8/sources/cxx-stl/gnu-libstdc++/include/
-LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/8/sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/include/
+LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/9/sources/cxx-stl/gnu-libstdc++/include/
+LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/9/sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/include/
 LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/external/openssl/include/
 
 

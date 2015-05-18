@@ -35,10 +35,11 @@ LOCAL_SHARED_LIBRARIES := \
     libnativehelper \
     libcutils \
     libutils  \
+    libnetutils \
     libhardware \
     libhardware_legacy \
     libnativehelper \
-    libnetworkutils \
+#    libnetworkutils \
     libstuncore \
     libcommon \
 
@@ -46,6 +47,10 @@ LOCAL_SHARED_LIBRARIES := \
 # No static libraries.
 LOCAL_STATIC_LIBRARIES :=   libstdc++  \
                             libgnustl_static \
+                            libnetworkutils \
+                            libstuncore \
+                            libcommon \
+
 
                           
 
@@ -55,8 +60,8 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)/../common/
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../stuncore/
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../networkutils
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../resources
-LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/8/sources/cxx-stl/gnu-libstdc++/include/
-LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/8/sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/include/
+LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/9/sources/cxx-stl/gnu-libstdc++/include/
+LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/9/sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/include/
 
 # No specia compiler flags.
 LOCAL_CFLAGS += -Wno-non-virtual-dtor -Wuninitialized  -fpermissive  -Wmissing-field-initializers

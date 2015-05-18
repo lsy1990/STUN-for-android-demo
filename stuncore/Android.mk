@@ -57,8 +57,8 @@ LOCAL_STATIC_LIBRARIES :=  libstdc++  \
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../common/
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../stuncore/
-LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/8/sources/cxx-stl/gnu-libstdc++/include/
-LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/8/sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/include/
+LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/9/sources/cxx-stl/gnu-libstdc++/include/
+LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/9/sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/include/
 LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/external/openssl/include/
 
 
@@ -105,8 +105,8 @@ LOCAL_STATIC_LIBRARIES :=  libstdc++  \
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../common/
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../stuncore/
-LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/8/sources/cxx-stl/gnu-libstdc++/include/
-LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/8/sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/include/
+LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/9/sources/cxx-stl/gnu-libstdc++/include/
+LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/prebuilts/ndk/9/sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/include/
 LOCAL_C_INCLUDES += $(LOCAL_ICS_PATH)/external/openssl/include/
 
 
