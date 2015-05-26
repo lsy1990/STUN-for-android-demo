@@ -27,6 +27,11 @@ LOCAL_MODULE:= stunclient
 
 # All of the source files that we will compile.
 LOCAL_SRC_FILES:= clientmain.cpp \
+                  LocalSharedFileManage.cpp \
+                  SharedFileBuffer.cpp \
+                  FileBlock.cpp \
+                  RegisterRequest.cpp \
+                  FetchP2pServerRequest.cpp \
 #TODO: specify source files
 
 # All of the shared libraries we link against.

@@ -331,6 +331,45 @@ Cleanup:
     return hr;
 }
 
+HRESULT CSocketAddress::OnlyIpToStringBuffer(char* pszAddrBytes, size_t length) const
+{
+    HRESULT hr = S_OK;
+    int family = GetFamily();
+    const void *pAddrBytes = NULL;
+    const char* pszResult = NULL;
+    const size_t portLength = 6; // colon plus 5 digit string e.g. ":55555"
+
+
+
+    ChkIfA(pszAddrBytes == NULL, E_INVALIDARG);
+    ChkIf(length <= 0, E_INVALIDARG);
+    pszAddrBytes[0] = 0;
+
+    if (family == AF_INET)
+    {
+        pAddrBytes = &(_address.addr4.sin_addr);
+        ChkIf(length < (INET_ADDRSTRLEN+portLength), E_INVALIDARG);
+    }
+    else if (family == AF_INET6)
+    {
+        pAddrBytes = &(_address.addr6.sin6_addr);
+        ChkIf(length < (INET6_ADDRSTRLEN+portLength), E_INVALIDARG);
+    }
+    else
+    {
+        ChkA(E_FAIL);
+    }
+
+    pszResult = ::inet_ntop(family, pAddrBytes, pszAddrBytes, length);
+
+    ChkIf(pszResult == NULL, ERRNOHR);
+
+Cleanup:
+    return hr;
+}
+
+
+
 
 
 HRESULT CSocketAddress::GetLocalHost(uint16_t family, CSocketAddress* pAddr)
