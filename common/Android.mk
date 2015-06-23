@@ -36,6 +36,7 @@ LOCAL_SRC_FILES:= atomichelpers.cpp \
                   prettyprint.cpp \
                   refcountobject.cpp \
                   stringhelper.cpp \
+                  datacheck.cpp \
 
   
   # All of the shared libraries we link against.
